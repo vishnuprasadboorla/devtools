@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark theme base */
+:root {
+  --bg: #0b1220;
+  --panel: #0f1724;
+  --muted: #94a3b8;
+}
+
+html.dark {
+  --bg: #0b1220;
+  --panel: #0f1724;
+  --muted: #94a3b8;
+}
+
+body {
+  background: var(--bg);
+  color: #e6eef8;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Hide scrollbars */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* keep both diff panes scroll-synced and remove horizontal scrollbar */
+.monaco-editor .scrollbar.horizontal {
+  display: none !important;
+}
+.monaco-editor .scroll-decoration {
+  display: none !important;
+}
+
+/* Remove horizontal scrollbar lines */
+.monaco-editor .scrollbar.horizontal {
+  display: none !important;
+}
+
+/* Keep scrollbar dark theme consistent */
+.monaco-editor .scrollbar.vertical {
+  background-color: transparent !important;
+}
+
+
+/* Fix narrow left pane in Monaco Diff Editor */
+.monaco-diff-editor.side-by-side .original-in-monaco-editor {
+  width: 50% !important;
+}
+.monaco-diff-editor.side-by-side .modified-in-monaco-editor {
+  width: 50% !important;
+}
