@@ -40,7 +40,7 @@ DevTools is a modern, dark-themed web application that brings together essential
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/devtools-portal.git
+git clone https://github.com/yourusername/devtools.git
 
 # Navigate to project directory
 cd devtools-portal
@@ -52,7 +52,7 @@ npm install
 npm run dev
 ```
 
-Visit `http://localhost:5173` to see the application running.
+Visit `https://devtools-portal.onrender.com` to see the application running.
 
 ### Build for Production
 
