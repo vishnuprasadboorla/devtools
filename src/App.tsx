@@ -21,9 +21,6 @@ function App() {
           <Link to="/diff-checker" className="hover:text-[#f0f174] transition">
             Diff Checker
           </Link>
-          <Link to="/snippets" className="hover:text-[#f0f174] transition">
-            Snippets
-          </Link>
           <Link to="/git-commands" className="hover:text-[#f0f174] transition">
             Git Commands
           </Link>
@@ -33,6 +30,9 @@ function App() {
           <Link to="/linux-shortcuts" className="hover:text-[#f0f174] transition">
             Linux Shortcuts
           </Link>
+          <Link to="/snippets" className="hover:text-[#f0f174] transition">
+            Snippets
+          </Link>
         </nav>
 
         {/* 🔹 Routes */}
@@ -41,7 +41,7 @@ function App() {
             path="/"
             element={
               <h1 className="text-center mt-10 text-3xl font-bold text-[#fefefe]">
-                Welcome to DevTools Portal 🚀
+                Welcome to DevTools 🚀
               </h1>
             }
           />

@@ -44,7 +44,7 @@ export default function Snippets() {
   return (
     <div className="min-h-screen bg-[#0b1220] text-gray-100 p-6 flex flex-col items-center">
       <h1 className="text-3xl font-bold mb-6 text-[#fefefe] tracking-wide">
-        Snippets Manager
+        Snippets (Complete Functionality coming soon...)
       </h1>
 
       {/* Add New Snippet */}
