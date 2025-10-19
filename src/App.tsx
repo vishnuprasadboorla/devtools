@@ -51,6 +51,12 @@ function App() {
           <Route path="/git-commands" element={<GitCommands />} />
           <Route path="/linux-commands" element={<LinuxCommands />} />
           <Route path="/linux-shortcuts" element={<LinuxShortcuts />} />
+          <Route path="*" element={
+            <div className="text-center mt-10">
+              <h1 className="text-3xl font-bold text-[#fefefe] mb-4">Page Not Found</h1>
+              <Link to="/" className="text-[#f0f174] hover:underline">Go Home</Link>
+            </div>
+          } />
         </Routes>
       </div>
     </Router>
